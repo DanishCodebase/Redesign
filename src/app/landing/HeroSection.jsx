@@ -37,7 +37,7 @@ export default function HeroSection() {
     <section className="relative overflow-hidden bg-gradient-to-br from-[#ff9056] via-[#ff9056] to-[#ff9056] min-h-screen">
       {/* Animated Background Patterns */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="absolute w-full h-full bg-[linear-gradient(to_right,#ffffff12_1px,transparent_1px),linear-gradient(to_bottom,#ffffff12_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute w-full h-full bg-[linear-gradient(to_right,#ffffff12_2px,transparent_2px),linear-gradient(to_bottom,#ffffff12_2px,transparent_2px)] bg-[size:4rem_4rem]" />
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white/10 to-transparent" />
       </div>
 

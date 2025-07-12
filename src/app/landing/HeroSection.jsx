@@ -115,7 +115,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="relative lg:mt-8"
+            className="relative mt-16 lg:mt-8"
           >
             <div className="overflow-hidden rounded-2xl bg-white shadow-2xl">
               {/* Header */}
@@ -137,12 +137,12 @@ export default function HeroSection() {
               </div>
 
               {/* Trading Chart */}
-              <div className="relative aspect-video bg-gray-50 p-4">
+              <div className="relative aspect-video bg-gray-50 p-0 sm:p-4">
                 <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=600')] bg-cover bg-center opacity-50" />
                 {/* <div className="relative h-full rounded-lg border border-gray-200 bg-white/80 p-4 backdrop-blur"> */}
                 {/* Video Element */}
                 <video
-                  className="w-full h-full rounded-lg"
+                  className="w-full h-full sm:rounded-lg"
                   autoPlay
                   loop
                   muted
@@ -154,13 +154,9 @@ export default function HeroSection() {
                 {/* </div> */}
                 <button
                   onClick={toggleMute}
-                  className="absolute bottom-4 right-7 bg-white text-black p-2 rounded-full flex items-center"
+                  className="absolute bottom-1 sm:bottom-4 right-1 sm:right-7 bg-white text-black p-2 rounded-full flex items-center"
                 >
-                  {isMuted ? (
-                    <VolumeX />
-                  ) : (
-                    <Volume2 />
-                  )}
+                  {isMuted ? <VolumeX /> : <Volume2 />}
                 </button>
               </div>
             </div>

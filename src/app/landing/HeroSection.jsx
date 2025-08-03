@@ -34,7 +34,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#ff9056] via-[#ff9056] to-[#ff9056] min-h-screen">
+    <section className="relative overflow-hidden pt-[84px] bg-gradient-to-br from-[#ff9056] via-[#ff9056] to-[#ff9056] min-h-screen">
       {/* Animated Background Patterns */}
       <div className="absolute inset-0 w-full h-full">
         <div className="absolute w-full h-full bg-[linear-gradient(to_right,#ffffff12_2px,transparent_2px),linear-gradient(to_bottom,#ffffff12_2px,transparent_2px)] bg-[size:4rem_4rem]" />
@@ -73,7 +73,11 @@ export default function HeroSection() {
               with us today.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4 items-center">
+            <a
+              href="https://wa.link/0nflac"
+              target="_blank"
+              className="flex flex-wrap justify-center gap-4 items-center"
+            >
               <Button
                 size="lg"
                 onMouseEnter={() => setIsHovered(true)}
@@ -88,7 +92,7 @@ export default function HeroSection() {
                 />
                 <span className="absolute inset-x-0 w-full h-full bg-gradient-to-r from-white/40 to-transparent rounded-full animate-shine" />
               </Button>
-            </div>
+            </a>
 
             {/* Stats Row */}
             {/* <div className="grid grid-cols-3 gap-6 pt-8">

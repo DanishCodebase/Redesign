@@ -74,7 +74,7 @@ export default function HeroSection() {
             </p>
 
             <a
-              href="https://wa.link/0nflac"
+              href="https://wa.link/i12lb8"
               target="_blank"
               className="flex flex-wrap justify-center gap-4 items-center"
             >
